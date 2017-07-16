@@ -149,7 +149,8 @@ public class AppodealWrapper extends ReactContextBaseJavaModule implements Lifec
         });
 
         Appodeal.disableLocationPermissionCheck();
-        Appodeal.initialize(getCurrentActivity(), apiKey, Appodeal.INTERSTITIAL | Appodeal.BANNER | Appodeal.REWARDED_VIDEO);
+        // Appodeal.initialize(getCurrentActivity(), apiKey, Appodeal.INTERSTITIAL | Appodeal.BANNER | Appodeal.REWARDED_VIDEO);
+        Appodeal.initialize(getCurrentActivity(), apiKey, Appodeal.BANNER);
     }
 
     @ReactMethod
